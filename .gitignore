@@ -1,0 +1,14 @@
+*~
+lib
+*.so
+*.pcd
+*.cop
+*.user
+bin
+build
+*met
+untitled*
+.tags
+*.json
+.excludes
+pc_angle_example

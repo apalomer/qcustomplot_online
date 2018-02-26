@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtGuiApplication</class>
+ <widget class="QWidget" name="QtGuiApplication">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>767</width>
+    <height>554</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QCustomPlot" name="qcustomplot" native="true"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Display</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Number of data points</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinBox">
+       <property name="minimum">
+        <number>10</number>
+       </property>
+       <property name="maximum">
+        <number>16348</number>
+       </property>
+       <property name="value">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Sleep duration (ms)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="doubleSpinBox">
+       <property name="minimum">
+        <double>0.010000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>1000.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="value">
+        <double>100.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
